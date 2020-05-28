@@ -54,8 +54,10 @@ def pixel_handler(address, *value):
 
             # draw.line((len(y_scaled), 32, len(y_scaled)+EXTRA_LENGTH, 32), S_LINE_WIDTH)
             resized = image.resize((128, 64))
-            resized.save("test_image.png")
-            disp.display(resized)
+            b_n_w = resized.convert('1')
+            # b_n_w.save(filename) 
+                
+            disp.display(b_n_w)
             sample_size.clear()
             draw.rectangle(((0, 0), WIDTH, HEIGHT), 0)
             
