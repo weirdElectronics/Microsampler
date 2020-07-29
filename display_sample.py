@@ -4,7 +4,7 @@ from pythonosc.udp_client import SimpleUDPClient
 
 from PIL import Image, ImageDraw
 
-# import Adafruit_SSD1306
+import Adafruit_SSD1306
 
 IP = "127.0.0.1"
 SERVER_PORT = 3001
