@@ -23,10 +23,10 @@ HEIGHT = 64
 MIDDLE = HEIGHT/2
 
 #Inicializacion de oled
- disp = Adafruit_SSD1306.SSD1306_128_64(rst=None)
- disp.begin()
- disp.clear()
- disp.display()
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=None)
+disp.begin()
+disp.clear()
+disp.display()
 
 def pointers(start_pos=0, end_pos=WIDTH):
     img = Image.open("output.png").convert('1')
