@@ -57,9 +57,8 @@ def pixel_handler(address, *value):
 
             img = pointers(pointer_a, pointer_b)
 
-            draw = ImageDraw.Draw(img)
-            img.show()
-
+            #draw = ImageDraw.Draw(img)
+            
             disp.image(img)  
             disp.display(img)
 
